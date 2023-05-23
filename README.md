@@ -1,0 +1,63 @@
+# GalaxyX
+Me and my student team write tests on C to examine APIs related to Task Management &amp; Scheduling modules of FreeRTOS
+## Assignment of API functions to test
+1. 박철현
+   - xTaskCreate
+   - xTaskCreateStatic
+   - xTaskCreateRestricted
+   - vTaskDelete
+   - vTaskDelay
+   - vTaskDelayUntil
+   - xTaskAbortDelay
+   - taskDISABLE_INTERRUPTS
+   - taskENABLE_INTERRUPTS
+   - xTaskGetApplicationTaskTag
+   - vTaskSetApplicationTaskTag
+2. Joseph
+   - taskENTER_CRITICAL
+   - taskEXIT_CRITICAL
+   - taskENTER_CRITICAL_FROM_ISR
+   - taskEXIT_CRITICAL_FROM_ISR
+   - xTaskGetCurrentTaskHandle
+   - xTaskGetIdleTaskHandle
+   - xTaskGetHandle
+   - uxTaskGetNumberOfTasks
+   - xTaskGetSchedulerState
+   - uxTaskGetStackHighWaterMark
+   - eTaskGetState
+3. 김주영
+   - pvTaskGetThreadLocalStoragePointer
+   - vTaskSetThreadLocalStoragePointer
+   - pcTaskGetName
+   - xTaskGetTickCount
+   - xTaskGetTickCountFromISR
+   - uxTaskPriorityGet
+   - vTaskPrioritySet
+   - vTaskResume
+   - xTaskResumeAll
+   - xTaskResumeFromISR
+   - vTaskStartScheduler
+4. Oybek
+   - xTaskNotify
+   - xTaskNotifyAndQuery
+   - xTaskNotifyAndQueryFromISR
+   - xTaskNotifyFromISR
+   - xTaskNotifyGive
+   - vTaskNotifyGiveFromISR
+   - xTaskNotifyStateClear
+   - ulTaskNotifyTake
+   - xTaskNotifyWait
+   - vTaskSuspend
+   - vTaskSuspendAll
+6. Aleksei
+   - portSWITCH_TO_USER_MODE
+   - vTaskAllocateMPURegions
+   - xTaskCallApplicationTaskHook
+   - xTaskCheckForTimeOut
+   - vTaskGetRunTimeStats
+   - uxTaskGetSystemState
+   - vTaskGetTaskInfo
+   - vTaskList
+   - vTaskSetTimeOutState
+   - vTaskStepTick
+   - taskYIELD

@@ -72,3 +72,5 @@ Me and my student team write tests on C to examine APIs related to Task Manageme
    - Create pull request on Github
 6. I'll review your code and give a feedback, you'll see it in the tab "Pull requests"
 7. Git commands usage example:
+![git commands](/doc/git_commands1.png)
+![git commands](/doc/git_commands2.png)

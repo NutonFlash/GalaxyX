@@ -72,5 +72,7 @@ Me and my student team write tests on C to examine APIs related to Task Manageme
    - Push commits to the remote repository (`git push name_of_the_remote_repo`)
 6. After you have pushed commits, you will be able to see it in the "Pull requests" tab. I'll review your code and make a feedback.
 7. Git commands usage example:
-   - ![git commands](/doc/terminal_screen1.png)
-   - ![git commands](/doc/terminal_screen2.png)
+
+![git commands](/doc/terminal_screen1.png)
+
+![git commands](/doc/terminal_screen2.png)

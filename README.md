@@ -2,7 +2,7 @@
 Me and my student team write tests on C to examine APIs related to Task Management &amp; Scheduling modules of FreeRTOS
 Distribution of responsibilities:
 1. **김주영**
-- [ ] xTaskCreate
+- [X] xTaskCreate
 - [ ] xTaskCreateStatic
 - [ ] xTaskCreateRestricted
 - [ ] vTaskDelete

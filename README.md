@@ -61,3 +61,13 @@ Me and my student team write tests on C to examine APIs related to Task Manageme
    - vTaskSetTimeOutState
    - vTaskStepTick
    - taskYIELD
+## Guide for working with Github
+1. Install Git on your PC [look here](https://github.com/git-guides/install-git)
+2. Init git repository in your workspace folder (`git init`)
+3. Add remote repository (`git remote add name_of_the_remote_repo https://github.com/NutonFlash/GalaxyX.git`)
+4. Create new branch to use for your commits (`git checkout -b name_of_the_branch`)
+5. In the process of developing tests, you should add your files to this repository, after which I will review them
+   - Add new files for the git tree (`git add path/to/files`)
+   - Commit added files with some informational message (`git commit -m 'some info about changes'`)
+   - Push commits to the remote repository (`git push name_of_the_remote_repo`)
+6. After you have pushed commits, you will be able to see it in the "Pull requests" tab. I'll review your code and make a feedback.

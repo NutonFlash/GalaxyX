@@ -4,11 +4,9 @@ Me and my student team write tests on C to examine APIs related to Task Manageme
 1. 박철현
    - xTaskCreate
    - xTaskCreateStatic
-   - xTaskCreateRestricted
    - vTaskDelete
    - vTaskDelay
    - vTaskDelayUntil
-   - xTaskAbortDelay
    - taskDISABLE_INTERRUPTS
    - taskENABLE_INTERRUPTS
    - xTaskGetApplicationTaskTag
@@ -23,8 +21,6 @@ Me and my student team write tests on C to examine APIs related to Task Manageme
    - xTaskGetHandle
    - uxTaskGetNumberOfTasks
    - xTaskGetSchedulerState
-   - uxTaskGetStackHighWaterMark
-   - eTaskGetState
 3. 김주영
    - pvTaskGetThreadLocalStoragePointer
    - vTaskSetThreadLocalStoragePointer
@@ -36,7 +32,6 @@ Me and my student team write tests on C to examine APIs related to Task Manageme
    - vTaskResume
    - xTaskResumeAll
    - xTaskResumeFromISR
-   - vTaskStartScheduler
 4. Oybek
    - xTaskNotify
    - xTaskNotifyAndQuery
@@ -47,9 +42,7 @@ Me and my student team write tests on C to examine APIs related to Task Manageme
    - xTaskNotifyStateClear
    - ulTaskNotifyTake
    - xTaskNotifyWait
-   - vTaskSuspend
-   - vTaskSuspendAll
-6. Aleksei
+5. Aleksei
    - portSWITCH_TO_USER_MODE
    - vTaskAllocateMPURegions
    - xTaskCallApplicationTaskHook
@@ -60,6 +53,14 @@ Me and my student team write tests on C to examine APIs related to Task Manageme
    - vTaskList
    - vTaskSetTimeOutState
    - vTaskStepTick
+6. Sahil
+   - xTaskCreateRestricted
+   - xTaskAbortDelay
+   - eTaskGetState
+   - uxTaskGetStackHighWaterMark
+   - vTaskStartScheduler
+   - vTaskSuspend
+   - vTaskSuspendAll
    - taskYIELD
 ## Guide for working with Github
 1. Install Git on your PC ([look here](https://github.com/git-guides/install-git))

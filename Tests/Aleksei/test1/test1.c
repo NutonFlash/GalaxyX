@@ -13,7 +13,12 @@ void vTask1(void *pvParameters);
 BaseType_t prvExampleTaskHook(void* pvParameter);
 
 int main(void)
-{
+{	
+
+	vPrintString("Test of the vTaskSetApplicationTaskTag() and xTaskCallApplicationTaskHook()\n");
+	vPrintString("----------------------------------------\n\n");
+	vPrintString("Start task1 with test1\n");
+
 	/* Create one of the two tasks. */
 	xTaskCreate(vTask1,	  /* Pointer to the function that implements the task. */
 				"Task 1", /* Text name for the task.  This is to facilitate debugging only. */
@@ -36,22 +41,26 @@ void vTask1(void *pvParameters)
 	
 	uint32_t execTimeCounter = 0;
 
-	for (;;) {
+	vPrintString("\nStart test1\n");
+
+	for (uint32_t i = 0;;i++) {
 		
 		if (execTimeCounter >= 5) {
 			break;
 		}
 
+		vPrintString("\nTest1 is running...\n");
+
 		execTimeCounter++;
-
-		vPrintString("Task1 is running...\n");
 		
-		vTaskDelay(pdMS_TO_TICKS( 1000 ));
+		vPrintString("Test1 is blocked for 1000ms\n");
 
+		vTaskDelay(pdMS_TO_TICKS( 1000 ));
 	}
 
 	xTaskCallApplicationTaskHook(NULL, execTimeCounter);
 	 
+	vPrintString("Task 1 with the test1 is finished");
 }
 
 // define a hook (callback) function
@@ -59,11 +68,10 @@ void vTask1(void *pvParameters)
 static BaseType_t prvExampleTaskHook(void* pvParameter)
 {
 	uint32_t *funcExecTime = pvParameter;
-	const char* pcTaskName = pcTaskGetName(NULL);
 
 	char msg[100];
 
-	sprintf(msg, "%s was executed %d times (TaskHookFunction)\n", pcTaskName, funcExecTime);
+	sprintf(msg, "\nTest1 was executed %d times (TaskHookFunction)\n", funcExecTime);
 
 	vPrintString(msg);
 

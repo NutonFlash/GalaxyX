@@ -103,6 +103,14 @@ extern "C" {
 /* Definitions specific to the port being used. */
 #include "portable.h"
 
+#ifndef configRUN_TIME_COUNTER_TYPE
+
+/* Defaults to uint32_t for backward compatibility, but can be overridden in
+ * FreeRTOSConfig.h if uint32_t is too restrictive. */
+
+#define configRUN_TIME_COUNTER_TYPE    uint32_t
+#endif
+
 /* Must be defaulted before configUSE_NEWLIB_REENTRANT is used below. */
 #ifndef configUSE_NEWLIB_REENTRANT
 	#define configUSE_NEWLIB_REENTRANT 0

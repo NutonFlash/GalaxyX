@@ -1,0 +1,11 @@
+﻿  list.c
+  heap_4.c
+  port.c
+  stats-utils.c
+  queue.c
+  tasks.c
+C:\CProject\source-code-for-book-examples\Win32-simulator-MSVC\FreeRTOS_Source\tasks.c(2367,27): warning C4013: 'ulGetRunTimeCounterValue' undefined; assuming extern returning int
+  supporting_functions.c
+  test4.c
+  Generating Code...
+  Aleksei.vcxproj -> C:\CProject\source-code-for-book-examples\Win32-simulator-MSVC\Tests\Aleksei\test4\MSVC\Debug\Aleksei.exe

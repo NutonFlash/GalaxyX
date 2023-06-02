@@ -43,16 +43,16 @@ Me and my student team write tests on C to examine APIs related to Task Manageme
    - ulTaskNotifyTake
    - xTaskNotifyWait
 5. Aleksei
-   - portSWITCH_TO_USER_MODE
-   - vTaskAllocateMPURegions
-   - xTaskCallApplicationTaskHook
-   - xTaskCheckForTimeOut
-   - vTaskGetRunTimeStats
-   - uxTaskGetSystemState
-   - vTaskGetTaskInfo
-   - vTaskList
-   - vTaskSetTimeOutState
-   - vTaskStepTick
+ [ ] portSWITCH_TO_USER_MODE
+ [ ] vTaskAllocateMPURegions
+ [x] xTaskCallApplicationTaskHook
+ [x] xTaskCheckForTimeOut
+ [x] vTaskGetRunTimeStats
+ [x] uxTaskGetSystemState
+ [x] vTaskGetTaskInfo
+ [x] vTaskList
+ [x] vTaskSetTimeOutState
+ [ ] vTaskStepTick
 6. Sahil
    - xTaskCreateRestricted
    - xTaskAbortDelay

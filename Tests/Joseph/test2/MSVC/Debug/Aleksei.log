@@ -1,0 +1,3 @@
+﻿  test2.c
+C:\Users\Joseph\Documents\source-code-for-book-examples\source-code-for-book-examples\Project\GalaxyX\Tests\Joseph\test2\test2.c(17,49): warning C4098: 'ISR_Handler': 'void' function returning a value
+  Aleksei.vcxproj -> C:\Users\Joseph\Documents\source-code-for-book-examples\source-code-for-book-examples\Project\GalaxyX\Tests\Joseph\test2\MSVC\Debug\Aleksei.exe

@@ -99,6 +99,7 @@
 #define configUSE_COUNTING_SEMAPHORES			1
 #define configUSE_ALTERNATIVE_API				0
 #define configUSE_QUEUE_SETS					1
+#define configNUM_THREAD_LOCAL_STORAGE_POINTERS 1
 
 /* Software timer related configuration options. */
 #define configUSE_TIMERS						0

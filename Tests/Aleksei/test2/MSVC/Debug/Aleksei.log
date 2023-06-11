@@ -1,2 +1,12 @@
-﻿  test2.c
-  Aleksei.vcxproj -> C:\CProject\source-code-for-book-examples\Win32-simulator-MSVC\Tests\Aleksei\test2\MSVC\Debug\Aleksei.exe
+﻿  list.c
+  port.c
+  heap_4.c
+  queue.c
+  tasks.c
+  supporting_functions.c
+  test2.c
+C:\Users\김주영\Desktop\freeRTOS\source-code-for-book-examples\Win32-simulator-MSVC\Project\GalaxyX\Tests\Aleksei\test2\test2.c(50,63): warning C4047: '함수': 'BaseType_t'의 간접 참조 수준이 'void *'과(와) 다릅니다.
+C:\Users\김주영\Desktop\freeRTOS\source-code-for-book-examples\Win32-simulator-MSVC\Project\GalaxyX\Tests\Aleksei\test2\test2.c(50,52): warning C4024: 'vTaskSetThreadLocalStoragePointer': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
+C:\Users\김주영\Desktop\freeRTOS\source-code-for-book-examples\Win32-simulator-MSVC\Project\GalaxyX\Tests\Aleksei\test2\test2.c(50,5): error C2198: 'vTaskSetThreadLocalStoragePointer': 호출에 인수가 너무 적습니다.
+C:\Users\김주영\Desktop\freeRTOS\source-code-for-book-examples\Win32-simulator-MSVC\Project\GalaxyX\Tests\Aleksei\test2\test2.c(54,46): error C2198: 'pvTaskGetThreadLocalStoragePointer': 호출에 인수가 너무 적습니다.
+  코드를 생성하고 있습니다...

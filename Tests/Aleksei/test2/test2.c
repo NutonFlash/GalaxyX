@@ -10,13 +10,14 @@
 
 /* The task functions. */
 void vTask1(void *pvParameters);
-void vTaskSetTimeOutState(TimeOut_t* const pxTimeOut);
+BaseType_t prvExampleTaskHook(void* pvParameter);
 
 int main(void)
-{
-	vPrintString("Test of the vTaskSetTimeOutState() and xTaskCheckForTimeOut()\n");
+{	
+
+	vPrintString("Test of the vTaskSetApplicationTaskTag() and xTaskCallApplicationTaskHook()\n");
 	vPrintString("----------------------------------------\n\n");
-	vPrintString("Start task1 with test2\n");
+	vPrintString("Start task1 with test1\n");
 
 	/* Create one of the two tasks. */
 	xTaskCreate(vTask1,	  /* Pointer to the function that implements the task. */
@@ -36,28 +37,43 @@ int main(void)
 
 void vTask1(void *pvParameters)
 {
-	TimeOut_t xtimeOut;
-	TickType_t xTicksToWait = pdMS_TO_TICKS(3500);
+	vTaskSetApplicationTaskTag(NULL, prvExampleTaskHook);
 	
-	vTaskSetTimeOutState(&xtimeOut);
+	uint32_t execTimeCounter = 0;
 
-	vPrintString("\nStart test2\n");
+	vPrintString("\nStart test1\n");
 
-	vPrintString("Initialize timeOutState for test2\n\n");
-	
-
-	for (;;) {
-		if (xTaskCheckForTimeOut(&xtimeOut, &xTicksToWait) != pdFALSE) {
-			vPrintString("Task is timed out due to exceeds ticks to wait limit\n");
+	for (uint32_t i = 0;;i++) {
+		
+		if (execTimeCounter >= 5) {
 			break;
 		}
 
-		vPrintString("Test2 is running...\n");
+		vPrintString("\nTest1 is running...\n");
 
-		vPrintString("Test2 is in the blocked state for 1000ms\n\n");
-		vTaskDelay(pdMS_TO_TICKS(1000));
+		execTimeCounter++;
+		
+		vPrintString("Test1 is blocked for 1000ms\n");
+
+		vTaskDelay(pdMS_TO_TICKS( 1000 ));
 	}
-	vPrintString("Task 1 with the test2 is finished");
+
+	xTaskCallApplicationTaskHook(NULL, execTimeCounter);
+	 
+	vPrintString("Task 1 with the test1 is finished");
 }
 
+// define a hook (callback) function
+// print the name of the function and the number of times it was executed
+static BaseType_t prvExampleTaskHook(void* pvParameter)
+{
+	uint32_t *funcExecTime = pvParameter;
 
+	char msg[100];
+
+	sprintf(msg, "\nTest1 was executed %d times (TaskHookFunction)\n", funcExecTime);
+
+	vPrintString(msg);
+
+	return 0;
+}

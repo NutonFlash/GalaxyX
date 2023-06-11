@@ -1,0 +1,3 @@
+﻿  test3.c
+C:\CProject\source-code-for-book-examples\Win32-simulator-MSVC\Tests\Sahil\test3\test3.c(73,6): warning C4101: 'arr': unreferenced local variable
+  Aleksei.vcxproj -> C:\CProject\source-code-for-book-examples\Win32-simulator-MSVC\Tests\Sahil\test3\MSVC\Debug\Aleksei.exe

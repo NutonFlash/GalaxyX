@@ -43,8 +43,8 @@ Me and my student team write tests on C to examine APIs related to Task Manageme
    - ulTaskNotifyTake
    - xTaskNotifyWait
 5. Aleksei
-   - [ ] portSWITCH_TO_USER_MODE
-   - [ ] vTaskAllocateMPURegions
+   - [ ] portSWITCH_TO_USER_MODE (unrealizable)
+   - [ ] vTaskAllocateMPURegions (unrealizable)
    - [x] xTaskCallApplicationTaskHook
    - [x] xTaskCheckForTimeOut
    - [x] vTaskGetRunTimeStats
@@ -52,16 +52,16 @@ Me and my student team write tests on C to examine APIs related to Task Manageme
    - [x] vTaskGetTaskInfo
    - [x] vTaskList
    - [x] vTaskSetTimeOutState
-   - [ ] vTaskStepTick
+   - [ ] vTaskStepTick (unrealizable)
 6. Sahil
-   - xTaskCreateRestricted
-   - xTaskAbortDelay
-   - eTaskGetState
-   - uxTaskGetStackHighWaterMark
-   - vTaskStartScheduler
-   - vTaskSuspend
-   - vTaskSuspendAll
-   - taskYIELD
+   - [ ] xTaskCreateRestricted (unrealizable)
+   - [x] xTaskAbortDelay
+   - [x] eTaskGetState
+   - [ ] uxTaskGetStackHighWaterMark
+   - [ ] vTaskStartScheduler
+   - [ ] vTaskSuspend
+   - [ ] vTaskSuspendAll
+   - [ ] taskYIELD
 ## Guide for working with Github
 1. Install Git on your PC ([look here](https://github.com/git-guides/install-git))
 2. Clone remote repository to your workspace folder (`git clone https://github.com/NutonFlash/GalaxyX.git`)

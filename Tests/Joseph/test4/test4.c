@@ -1,55 +1,49 @@
 #include <stdio.h>
-
-/* FreeRTOS.org includes. */
 #include "FreeRTOS.h"
 #include "task.h"
 
-/* Function prototypes */
-void vDemoFunction(void);
-void vDemoISR(void);
-
-/* A function called from an ISR. */
-void vDemoFunction(void)
+// Task function
+void task1(void* pvParameters)
 {
-    UBaseType_t uxSavedInterruptStatus;
-    /* Enter the critical section. Save the value returned by taskENTER_CRITICAL_FROM_ISR()
-    into a local stack variable so it can be passed into taskEXIT_CRITICAL_FROM_ISR(). */
-    uxSavedInterruptStatus = taskENTER_CRITICAL_FROM_ISR();
+    UBaseType_t priority;
 
-    /* Perform the action that is being protected by the critical section here. */
-    printf("Inside vDemoFunction: Critical section protected action\n");
+    // Get the priority of this task
+    priority = uxTaskPriorityGet(NULL);
+    printf("Retrieving Priority of Task 1\n");
+    printf("Task 1 priority: %u\n\n", priority);
 
-    /* Exit the critical section. */
-    taskEXIT_CRITICAL_FROM_ISR(uxSavedInterruptStatus);
+    vTaskDelete(NULL); // Delete the task
 }
 
-/* A task that calls vDemoFunction() from within an interrupt service routine. */
-void vDemoISR(void)
+void task2(void* pvParameters)
 {
-    UBaseType_t uxSavedInterruptStatus;
-    /* Call taskENTER_CRITICAL_FROM_ISR() to create a critical section, saving the
-    returned value into a local stack. */
-    uxSavedInterruptStatus = taskENTER_CRITICAL_FROM_ISR();
+    UBaseType_t priority;
 
-    /* Execute the code that requires the critical section here. */
-    printf("Inside vDemoISR: Code before vDemoFunction\n");
+    // Get the priority of this task
+    priority = uxTaskPriorityGet(NULL);
+    printf("Retrieving Priority of Task 2\n");
+    printf("Task 2 priority: %u\n\n", priority);
 
-    /* Calls to taskENTER_CRITICAL_FROM_ISR() can be nested, so it is safe to call a
-    function that includes its own calls to taskENTER_CRITICAL_FROM_ISR() and
-    taskEXIT_CRITICAL_FROM_ISR(). */
-    vDemoFunction();
-
-    /* The operation that required the critical section is complete, so exit the
-    critical section. Assuming interrupts were enabled on entry to this ISR, the value
-    saved in uxSavedInterruptStatus will result in interrupts being re-enabled. */
-    taskEXIT_CRITICAL_FROM_ISR(uxSavedInterruptStatus);
+    vTaskDelete(NULL); // Delete the task
 }
 
-/* Main function */
 int main()
 {
-    /* Simulating an interrupt by calling vDemoISR */
-    vDemoISR();
+    // Initialize FreeRTOS
+
+    // Create tasks
+    xTaskCreate(task1, "Task 1", configMINIMAL_STACK_SIZE, NULL, 1, NULL);
+    xTaskCreate(task2, "Task 2", configMINIMAL_STACK_SIZE, NULL, 2, NULL);
+
+    // Start the scheduler
+    vTaskStartScheduler();
+
+    // The scheduler will now start running the tasks
+
+    while (1)
+    {
+        // Code inside the idle task
+    }
 
     return 0;
 }

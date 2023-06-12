@@ -31,6 +31,8 @@ int main()
 
     // Call uxTaskGetNumberOfTasks() to get the total number of tasks
     UBaseType_t taskCount = uxTaskGetNumberOfTasks();
+    printf("Test of the uxTaskGetNumberOfTasks()\n");
+    printf("------------------------------------\n\n");
     printf("Counting the number of tasks running\n");
     printf("Total number of tasks: %u\n", taskCount);
 

@@ -2,46 +2,46 @@
 Me and my student team write tests on C to examine APIs related to Task Management &amp; Scheduling modules of FreeRTOS
 ## Assignment of API functions to test
 1. 박철현
-   - xTaskCreate
-   - xTaskCreateStatic
-   - vTaskDelete
-   - vTaskDelay
-   - vTaskDelayUntil
-   - taskDISABLE_INTERRUPTS
-   - taskENABLE_INTERRUPTS
-   - xTaskGetApplicationTaskTag
-   - vTaskSetApplicationTaskTag
+   - [ ] xTaskCreate
+   - [ ] xTaskCreateStatic
+   - [ ] vTaskDelete
+   - [ ] vTaskDelay
+   - [ ] vTaskDelayUntil
+   - [ ] taskDISABLE_INTERRUPTS
+   - [ ] taskENABLE_INTERRUPTS
+   - [ ] xTaskGetApplicationTaskTag
+   - [ ] vTaskSetApplicationTaskTag
 2. Joseph
-   - taskENTER_CRITICAL
-   - taskEXIT_CRITICAL
-   - taskENTER_CRITICAL_FROM_ISR
-   - taskEXIT_CRITICAL_FROM_ISR
-   - xTaskGetCurrentTaskHandle
-   - xTaskGetIdleTaskHandle
-   - xTaskGetHandle
-   - uxTaskGetNumberOfTasks
-   - xTaskGetSchedulerState
+   - [x] taskENTER_CRITICAL
+   - [x] taskEXIT_CRITICAL
+   - [ ] taskENTER_CRITICAL_FROM_ISR (unrealizable)
+   - [ ] taskEXIT_CRITICAL_FROM_ISR (unrealizable)
+   - [ ] xTaskGetCurrentTaskHandle
+   - [ ] xTaskGetIdleTaskHandle
+   - [ ] xTaskGetHandle
+   - [ ] uxTaskGetNumberOfTasks
+   - [ ] xTaskGetSchedulerState
 3. 김주영
-   - pvTaskGetThreadLocalStoragePointer
-   - vTaskSetThreadLocalStoragePointer
-   - pcTaskGetName
-   - xTaskGetTickCount
-   - xTaskGetTickCountFromISR
-   - uxTaskPriorityGet
-   - vTaskPrioritySet
-   - vTaskResume
-   - xTaskResumeAll
-   - xTaskResumeFromISR
+   - [ ] pvTaskGetThreadLocalStoragePointer
+   - [ ] vTaskSetThreadLocalStoragePointer
+   - [ ] pcTaskGetName
+   - [ ] xTaskGetTickCount
+   - [ ] xTaskGetTickCountFromISR (unrealizable)
+   - [ ] uxTaskPriorityGet
+   - [ ] vTaskPrioritySet
+   - [ ] vTaskResume
+   - [ ] xTaskResumeAll
+   - [ ] xTaskResumeFromISR (unrealizable)
 4. Oybek
-   - xTaskNotify
-   - xTaskNotifyAndQuery
-   - xTaskNotifyAndQueryFromISR
-   - xTaskNotifyFromISR
-   - xTaskNotifyGive
-   - vTaskNotifyGiveFromISR
-   - xTaskNotifyStateClear
-   - ulTaskNotifyTake
-   - xTaskNotifyWait
+   - [ ] xTaskNotify
+   - [ ] xTaskNotifyAndQuery
+   - [ ] xTaskNotifyAndQueryFromISR (unrealizable)
+   - [ ] xTaskNotifyFromISR (unrealizable)
+   - [ ] xTaskNotifyGive
+   - [ ] vTaskNotifyGiveFromISR (unrealizable)
+   - [ ] xTaskNotifyStateClear
+   - [ ] ulTaskNotifyTake
+   - [ ] xTaskNotifyWait
 5. Aleksei
    - [ ] portSWITCH_TO_USER_MODE (unrealizable)
    - [ ] vTaskAllocateMPURegions (unrealizable)

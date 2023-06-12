@@ -1,4 +1,0 @@
-﻿  testcav1.c
-C:\Users\20oyb\OneDrive\Desktop\GalaxyX\Tests\Oybek\testcav1\testcav1.c(12,30): warning C4133: 'function': incompatible types - from 'TickType_t *' to 'TimeOut_t *const '
-C:\Users\20oyb\OneDrive\Desktop\GalaxyX\Tests\Oybek\testcav1\testcav1.c(18,34): warning C4133: 'function': incompatible types - from 'TickType_t *' to 'TimeOut_t *const '
-  Aleksei.vcxproj -> C:\Users\20oyb\OneDrive\Desktop\GalaxyX\Tests\Oybek\testcav1\MSVC\Debug\Aleksei.exe

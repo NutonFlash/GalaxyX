@@ -17,8 +17,8 @@ Me and my student team write tests on C to examine APIs related to Task Manageme
    - [ ] taskENTER_CRITICAL_FROM_ISR (unrealizable)
    - [ ] taskEXIT_CRITICAL_FROM_ISR (unrealizable)
    - [ ] xTaskGetCurrentTaskHandle
-   - [ ] xTaskGetIdleTaskHandle
-   - [ ] xTaskGetHandle
+   - [x] xTaskGetIdleTaskHandle
+   - [x] xTaskGetHandle
    - [x] uxTaskGetNumberOfTasks
    - [ ] xTaskGetSchedulerState
 3. 김주영

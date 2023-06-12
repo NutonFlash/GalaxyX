@@ -19,31 +19,31 @@ Me and my student team write tests on C to examine APIs related to Task Manageme
    - [ ] xTaskGetCurrentTaskHandle
    - [ ] xTaskGetIdleTaskHandle
    - [ ] xTaskGetHandle
-   - [ ] uxTaskGetNumberOfTasks
+   - [x] uxTaskGetNumberOfTasks
    - [ ] xTaskGetSchedulerState
 3. 김주영
-   - [ ] pvTaskGetThreadLocalStoragePointer
-   - [ ] vTaskSetThreadLocalStoragePointer
-   - [ ] pcTaskGetName
-   - [ ] xTaskGetTickCount
+   - [x] pvTaskGetThreadLocalStoragePointer
+   - [x] vTaskSetThreadLocalStoragePointer
+   - [x] pcTaskGetName
+   - [x] xTaskGetTickCount
    - [ ] xTaskGetTickCountFromISR (unrealizable)
    - [ ] uxTaskPriorityGet
    - [ ] vTaskPrioritySet
-   - [ ] vTaskResume
+   - [x] vTaskResume
    - [ ] xTaskResumeAll
    - [ ] xTaskResumeFromISR (unrealizable)
 4. Oybek
-   - [ ] xTaskNotify
-   - [ ] xTaskNotifyAndQuery
+   - [x] xTaskNotify
+   - [x] xTaskNotifyAndQuery
    - [ ] xTaskNotifyAndQueryFromISR (unrealizable)
    - [ ] xTaskNotifyFromISR (unrealizable)
-   - [ ] xTaskNotifyGive
+   - [x] xTaskNotifyGive
    - [ ] vTaskNotifyGiveFromISR (unrealizable)
-   - [ ] xTaskNotifyStateClear
-   - [ ] ulTaskNotifyTake
-   - [ ] xTaskNotifyWait
+   - [x] xTaskNotifyStateClear
+   - [x] ulTaskNotifyTake
+   - [x] xTaskNotifyWait
 5. Aleksei
-   - [ ] portSWITCH_TO_USER_MODE (unrealizable)
+   - [x] portSWITCH_TO_USER_MODE
    - [ ] vTaskAllocateMPURegions (unrealizable)
    - [x] xTaskCallApplicationTaskHook
    - [x] xTaskCheckForTimeOut
@@ -57,9 +57,9 @@ Me and my student team write tests on C to examine APIs related to Task Manageme
    - [ ] xTaskCreateRestricted (unrealizable)
    - [x] xTaskAbortDelay
    - [x] eTaskGetState
-   - [ ] uxTaskGetStackHighWaterMark
-   - [ ] vTaskStartScheduler
-   - [ ] vTaskSuspend
+   - [x] uxTaskGetStackHighWaterMark
+   - [x] vTaskStartScheduler
+   - [x] vTaskSuspend
    - [ ] vTaskSuspendAll
    - [ ] taskYIELD
 ## Guide for working with Github

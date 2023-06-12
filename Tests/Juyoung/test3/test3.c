@@ -30,16 +30,15 @@ int main(void) {
 void vTask1(void* pvParameters)
 {
     TickType_t xTime1, xTime2, xExecutionTime;
-    uint32_t ul = 0;
 
-    vPrintString("\nStart test1\n");
+    vPrintString("\nStart test3\n");
 
     for (uint32_t i = 0;; i++) {
 
         xTime1 = xTaskGetTickCount();
         Sleep(10);
 
-        vPrintString("Test1 is blocked for 1000ms\n");
+        vPrintString("Test3 is blocked for 1000ms\n");
         vTaskDelay(pdMS_TO_TICKS(1000));
 
         xTime2 = xTaskGetTickCount();
@@ -47,6 +46,6 @@ void vTask1(void* pvParameters)
         printf("Elapsed time: %u ticks\n", xExecutionTime);
     }
     
-    vPrintString("Task 1 with the test1 is finished");
+    vPrintString("Task 1 with the test3 is finished");
 
 }

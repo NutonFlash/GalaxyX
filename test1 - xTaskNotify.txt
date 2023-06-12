@@ -1,5 +1,0 @@
-test1 - xTaskNotify
-test2 - xTaskNotifyAndQuery
-test3 - xTaskNotifyStateClear
-test4 - xTaskNotifyGive
-test5 - xTaskNotifyWait

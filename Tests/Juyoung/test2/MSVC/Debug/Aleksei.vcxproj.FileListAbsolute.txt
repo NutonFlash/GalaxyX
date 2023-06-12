@@ -1,0 +1,4 @@
+C:\CProject\source-code-for-book-examples\Win32-simulator-MSVC\Tests\Aleksei\test1\MSVC\Debug\Aleksei.exe
+C:\Users\김주영\Desktop\freeRTOS\source-code-for-book-examples\Win32-simulator-MSVC\Project\GalaxyX\Tests\Aleksei\test1\MSVC\Debug\Aleksei.exe
+C:\Users\김주영\Desktop\freeRTOS\source-code-for-book-examples\Win32-simulator-MSVC\Project\GalaxyX\Tests\Juyoung\test1\MSVC\Debug\Aleksei.exe
+C:\Users\김주영\Desktop\freeRTOS\source-code-for-book-examples\Win32-simulator-MSVC\Project\GalaxyX\Tests\Juyoung\test2\MSVC\Debug\Aleksei.exe

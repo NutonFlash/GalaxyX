@@ -1,11 +1,1 @@
-﻿  list.c
-  heap_4.c
-  port.c
-  queue.c
-  tasks.c
-  supporting_functions.c
-  test1.c
-C:\CProject\source-code-for-book-examples\Win32-simulator-MSVC\Tests\Aleksei\test1\test1.c(61,37): warning C4022: 'xTaskCallApplicationTaskHook': pointer mismatch for actual parameter 2
-C:\CProject\source-code-for-book-examples\Win32-simulator-MSVC\Tests\Aleksei\test1\test1.c(74,15): warning C4477: 'sprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'uint32_t *'
-  Generating Code...
-  Aleksei.vcxproj -> C:\CProject\source-code-for-book-examples\Win32-simulator-MSVC\Tests\Aleksei\test1\MSVC\Debug\Aleksei.exe
+﻿  Aleksei.vcxproj -> C:\Users\김주영\Desktop\freeRTOS\source-code-for-book-examples\Win32-simulator-MSVC\Project\GalaxyX\Tests\Aleksei\test1\MSVC\Debug\Aleksei.exe

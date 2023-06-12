@@ -1,0 +1,2 @@
+C:\CProject\source-code-for-book-examples\Win32-simulator-MSVC\Tests\Joseph\test5\MSVC\Debug\Aleksei.exe
+C:\CProject\source-code-for-book-examples\Win32-simulator-MSVC\Tests\Joseph\test6\MSVC\Debug\Aleksei.exe

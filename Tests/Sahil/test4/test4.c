@@ -30,6 +30,9 @@ int main(void)
 	xTaskCreate(vTask2, "Task 2", 100, NULL, 1, NULL);
 
 	vPrintString("Start scheduler to execute Task 1 and Task 2\n");
+
+	vPrintString("Start Task 1\n");
+	vPrintString("Start Task 2\n");
 	/* Start the scheduler to start the tasks executing. */
 	vTaskStartScheduler();
 

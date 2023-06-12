@@ -1,0 +1,6 @@
+﻿  testcav2.c
+C:\Users\20oyb\OneDrive\Desktop\GalaxyX\Tests\Oybek\testcav2\testcav2.c(18,5): warning C4013: 'xTaskSetThreadLocalStoragePointer' undefined; assuming extern returning int
+C:\Users\20oyb\OneDrive\Desktop\GalaxyX\Tests\Oybek\testcav2\testcav2.c(23,38): warning C4013: 'xTaskGetThreadLocalStoragePointer' undefined; assuming extern returning int
+testcav2.obj : error LNK2019: unresolved external symbol _xTaskSetThreadLocalStoragePointer referenced in function _vTask1
+testcav2.obj : error LNK2019: unresolved external symbol _xTaskGetThreadLocalStoragePointer referenced in function _vTask1
+C:\Users\20oyb\OneDrive\Desktop\GalaxyX\Tests\Oybek\testcav2\MSVC\Debug\Aleksei.exe : fatal error LNK1120: 2 unresolved externals

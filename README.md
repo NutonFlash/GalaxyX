@@ -2,15 +2,15 @@
 Me and my student team write tests on C to examine APIs related to Task Management &amp; Scheduling modules of FreeRTOS
 ## Assignment of API functions to test
 1. 박철현
-   - [ ] xTaskCreate
+   - [x] xTaskCreate
    - [ ] xTaskCreateStatic
-   - [ ] vTaskDelete
-   - [ ] vTaskDelay
+   - [x] vTaskDelete
+   - [x] vTaskDelay
    - [ ] vTaskDelayUntil
    - [ ] taskDISABLE_INTERRUPTS
    - [ ] taskENABLE_INTERRUPTS
-   - [ ] xTaskGetApplicationTaskTag
-   - [ ] vTaskSetApplicationTaskTag
+   - [x] xTaskGetApplicationTaskTag
+   - [x] vTaskSetApplicationTaskTag
 2. Joseph
    - [x] taskENTER_CRITICAL
    - [x] taskEXIT_CRITICAL

@@ -7,17 +7,24 @@
 
 /* Demo includes. */
 #include "supporting_functions.h"
+
 #define mainDELAY_LOOP_COUNT		( 0xffffff )
 
 void vTask1(void* pvParameters);
 
 int main(void) {
 
-    vPrintString("Test of the pcTaskGetName()\n");
+    vPrintString("Test of the vTaskSuspendAll() and xTaskResumeAll()\n");
     vPrintString("----------------------------------------\n\n");
-    vPrintString("Start task1 with test2\n");
+    vPrintString("Start task1 with test7\n");
 
     xTaskCreate(vTask1, "Task 1", 100, NULL, 1, NULL);
+
+    vTaskSuspendAll();
+    printf("Task scheduling is suspended\n");
+
+    xTaskResumeAll();
+    printf("Task scheduling is resumed\n");
 
     vTaskStartScheduler();
 
@@ -25,17 +32,15 @@ int main(void) {
     return 0;
 }
 
+
 void vTask1(void* pvParameters) {
-    uint32_t ul = 0;
-
-    vPrintString("\nStart test1\n");
-
     for (uint32_t i = 0;; i++) {
+        printf("Task 1 is running\n");
 
-        const char* taskName = pcTaskGetName(NULL);
-        printf("Current Task Name: %s\n", taskName);
+        vPrintString("\nTest7 is running...\n");
 
+        vPrintString("Test7 is blocked for 1000ms\n");
         vTaskDelay(pdMS_TO_TICKS(1000));
     }
-    vPrintString("Task 1 with the test2 is finished");
+    vPrintString("Task 1 with the test7 is finished");
 }

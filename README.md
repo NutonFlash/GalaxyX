@@ -26,11 +26,11 @@ Me and my student team write tests on C to examine APIs related to Task Manageme
    - [x] vTaskSetThreadLocalStoragePointer
    - [x] pcTaskGetName
    - [x] xTaskGetTickCount
-   - [ ] xTaskGetTickCountFromISR (unrealizable)
-   - [ ] uxTaskPriorityGet
-   - [ ] vTaskPrioritySet
+   - [x] xTaskGetTickCountFromISR
+   - [x] uxTaskPriorityGet
+   - [x] vTaskPrioritySet
    - [x] vTaskResume
-   - [ ] xTaskResumeAll
+   - [x] xTaskResumeAll
    - [ ] xTaskResumeFromISR (unrealizable)
 4. Oybek
    - [x] xTaskNotify
@@ -60,7 +60,7 @@ Me and my student team write tests on C to examine APIs related to Task Manageme
    - [x] uxTaskGetStackHighWaterMark
    - [x] vTaskStartScheduler
    - [x] vTaskSuspend
-   - [ ] vTaskSuspendAll
+   - [x] vTaskSuspendAll
    - [ ] taskYIELD
 ## Guide for working with Github
 1. Install Git on your PC ([look here](https://github.com/git-guides/install-git))

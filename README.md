@@ -6,7 +6,7 @@ Me and my student team write tests on C to examine APIs related to Task Manageme
    - [ ] xTaskCreateStatic
    - [x] vTaskDelete
    - [x] vTaskDelay
-   - [ ] vTaskDelayUntil
+   - [x] vTaskDelayUntil
    - [ ] taskDISABLE_INTERRUPTS
    - [ ] taskENABLE_INTERRUPTS
    - [x] xTaskGetApplicationTaskTag
